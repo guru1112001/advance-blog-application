@@ -15,6 +15,7 @@
  <h2>
  {{ total_comments }} comment{{ total_comments|pluralize }}
  </h2>
+ <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
  {% endwith %}
  {%for comment in comments%}
  <div class="comment">
